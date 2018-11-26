@@ -1,6 +1,8 @@
 # site
 
-> My cool Nuxt.js project
+> Nickname: user001
+> Password: pass001*
+
 
 ## Build Setup
 
