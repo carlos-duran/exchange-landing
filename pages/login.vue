@@ -58,14 +58,6 @@ export default {
       }
     }
   },
-  watch: {
-    '$auth.user': {
-      immediate: true,
-      handler() {
-        this.$router.replace('/')
-      }
-    }
-  },
   methods: {
     async login() {
       if (this.authenticating) return
@@ -73,11 +65,6 @@ export default {
       try {
         await this.$auth.loginWith('local', { data: this.auth })
       } catch (e) {
-        // this.$notify({
-        //   type: 'danger',
-        //   title: 'Auth failed',
-        //   text: 'Incorrect nickname or password'
-        // })
         window.alert('Auth failed')
       } finally {
         this.authenticating = false
