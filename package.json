@@ -1,0 +1,36 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "My cool Nuxt.js project",
+  "author": "Carlos Duran",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development HOST=0.0.0.0 PORT=3501 nuxt",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "NODE_ENV=production PORT=3501 nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@mdi/font": "^3.0.39",
+    "@nuxtjs/auth": "^4.5.3",
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/dotenv": "^1.3.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "v-money": "^0.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3",
+    "tailwindcss": "^0.7.2"
+  }
+}

@@ -1,0 +1,7 @@
+.bg-primary {
+  background-image: linear-gradient(
+    to right,
+    config('colors.indigo'),
+    config('colors.teal')
+  );
+}
